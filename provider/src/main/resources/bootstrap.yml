@@ -1,7 +1,7 @@
 spring:
   cloud:
     consul:
-      host: localhost
+      host: myhost
       port: 8500
 
 #    config:

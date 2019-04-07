@@ -1,7 +1,7 @@
 spring:
   cloud:
     consul:
-      host: localhost
+      host: myhost
       port: 8500
     gateway:
       routes:
@@ -9,9 +9,3 @@ spring:
          uri: http://localhost:8078
          predicates:
          - Header=X-Request-Id,lujsh
-    gateway:
-      routes:
-       - id: host_route
-         uri: http://localhost:8077
-         predicates:
-         - HOST = **/test
